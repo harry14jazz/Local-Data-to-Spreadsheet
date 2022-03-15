@@ -15,7 +15,7 @@ credentials = service_account.Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
 # The ID and range of a sample spreadsheet.
-SAMPLE_SPREADSHEET_ID = '1CRb7T_qTAjP_Th63BGXXoiNElD4vd1oJyqM26gsl62I'
+SAMPLE_SPREADSHEET_ID = config('ssheet_id')
 SAMPLE_RANGE_NAME = 'my-expenses!A1:F1'
 
 if __name__ == "__main__":
